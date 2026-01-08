@@ -1,0 +1,11 @@
+/* Contenedor del reproductor 16:9 */
+.player-container {
+  width: 90%;              /* ocupa todo el ancho disponible en móvil */
+  max-width: 800px;         /* límite en pantallas grandes */
+  aspect-ratio: 16 / 9;     /* mantiene proporción 16:9 */
+  background-color: #000;   /* temporal, negro para ver la caja */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;        /* centra horizontalmente y separa de navbar */
+  border-radius: 12px;       /* opcional, bordes redondeados */
+}

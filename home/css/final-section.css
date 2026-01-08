@@ -1,0 +1,38 @@
+.final-section {
+  display: flex;
+  justify-content: center;  /* centra el formulario */
+  margin: 40px 0;           /* separación arriba y abajo */
+  width: 100%;
+}
+
+.intro-form {
+  display: flex;
+  gap: 10px;               /* espacio entre input y botón */
+  justify-content: center;
+  width: 100%;
+  max-width: 650px;        /* ancho máximo */
+}
+
+.intro-email {
+  padding: 12px;
+  font-size: 1rem;
+  width: 200px;            /* ancho base para que quepa el botón al lado */
+  max-width: 70%;           /* responsivo */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.intro-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.intro-button:hover {
+  background-color: #0056b3;
+}

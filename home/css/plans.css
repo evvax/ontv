@@ -1,0 +1,39 @@
+/* SECCIÓN PLANES */
+.planes-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.planes-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de cajas */
+.planes-container {
+  display: flex;
+  flex-direction: column; /* vertical por defecto (mobile) */
+  gap: 10px;              /* espacio entre cajas */
+  align-items: center;    /* centra las cajas horizontalmente */
+}
+
+/* Cajas */
+.plan-box {
+  width: 350px;           /* tamaño base móvil */
+  height: 250px;
+  background-color: #333;
+  border-radius: 12px;
+}
+
+/* Desktop: cajas lado a lado */
+@media (min-width: 768px) {
+  .planes-container {
+    flex-direction: row;   /* horizontal en desktop */
+    justify-content: center;
+  }
+
+  .plan-box {
+    width: 800px;          /* tamaño mayor en desktop */
+  }
+}

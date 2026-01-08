@@ -1,0 +1,64 @@
+.intro-section {
+  display: flex;
+  flex-direction: column;  /* todo en columna */
+  align-items: center;     /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente si hay altura */
+  gap: 15px;               /* espacio entre elementos */
+  margin-top: 10px;          /* separación arriba y abajo */
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-section p {
+  margin: 0;        /* elimina márgenes por defecto */
+}
+
+.intro-section .intro-bold {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.intro-section .intro-normal {
+  margin-top: -5px;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.intro-section .intro-subtext {
+  font-weight: 300;  /* más ligero que normal */
+  font-size: 1rem;
+  color: #000000;       /* opcional: gris suave */
+  margin-top: -3px;  /* opcional: ajustar separación */
+}
+
+.intro-form {
+  display: flex;
+  gap: 10px;           /* espacio entre input y botón */
+  justify-content: center;
+  width: 100%;         /* opcional: ocupa todo el ancho disponible */
+  max-width: 650px;    /* ajusta el ancho máximo del contenedor */
+}
+
+.intro-section .intro-email {
+  padding: 12px;
+  font-size: 1rem;
+  width: 200px;        /* reducimos ancho para que quepa el botón al lado */
+  max-width: 70%;      /* responsivo */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.intro-section .intro-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.intro-section .intro-button:hover {
+  background-color: #0056b3;
+}

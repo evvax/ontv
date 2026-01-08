@@ -1,0 +1,43 @@
+/* SECCIÓN CANALES */
+.canales-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.canales-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* Grid de logos 2 filas x 4 columnas */
+.canales-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 10px;
+  row-gap: 5px;
+  justify-items: center;     /* centra cada logo */
+  justify-content: center;   /* centra el grid completo */
+  max-width: 360px;          /* 4 logos x 80px + 3 gaps de 5px = 320+15=335px, un poco de margen */
+  margin: 0 auto;            /* centra el grid en la pantalla */
+}
+
+
+/* "Logos" simulados */
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 8px;
+}
+
+/* Responsive (desktop) */
+@media (min-width: 768px) {
+  .canales-section h2 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}

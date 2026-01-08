@@ -1,0 +1,92 @@
+/* Sección del formulario */
+.login-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+  padding: 0px;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* espacio entre los campos */
+  width: 100%;
+  max-width: 350px; /* ancho máximo del formulario */
+}
+
+/* Campos de texto */
+.login-input {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.login-input:focus {
+  border-color: #007bff;
+}
+
+/* Botón */
+.login-button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.register-button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #003a79;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Separador */
+.separator {
+  margin: 10px 0 10px 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.login-button,
+.register-button {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Texto “Olvidaste tu contraseña” centrado */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+  color: #007bff;
+  text-decoration: underline;
+}

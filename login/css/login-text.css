@@ -1,0 +1,18 @@
+/* Sección de Iniciar Sesión */
+.login-section {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente dentro de la altura de la sección */
+  height: 10px;           /* puedes ajustar este valor */
+  background-color: #ffffff00; /* opcional */
+  margin-top: 120px;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+.login-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+/* ------------------------------
+   Estilos base — MÓVIL por defecto
+------------------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;           /* asegura que body ocupe toda la ventana */
+  font-family: system-ui, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column; /* columna vertical: navbar + contenido + footer */
+}
+
+/* Contenedor principal del contenido (todo menos footer) */
+main, .page-content {
+  flex: 1; /* ocupa todo el espacio disponible */
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+  body {
+    background-color: #e5e5e5;
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+  body {
+    background-color: #ddd;
+  }
+}
+
+/* ------------------------------
+   OCULTAR BARRA DE SCROLL
+------------------------------ */
+body, .canales-scroll-wrapper, main {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+body::-webkit-scrollbar,
+.canales-scroll-wrapper::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* ------------------------------
+   Reiniciar márgenes y padding global
+------------------------------ */
+* {
+  box-sizing: border-box;
+}
